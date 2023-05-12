@@ -1,0 +1,18 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Agency FB", sans-serif;
+  --content-width: 1170px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-main-width: 1440px;
+  --container-main-offset: 35px;
+  // colors
+  --light-color: #fff;
+  --accent-color: #09A2F9;
+  --button-color: #FFE400;
+  --text-color: #FAFAFA;
+  --footer-color: #909090;
+  --dark-color: #000000
+}

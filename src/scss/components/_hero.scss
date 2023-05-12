@@ -1,0 +1,95 @@
+.hero {
+  background-image: url(../../img/stronger.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
+  @include responsive{
+    background-image: url(../../img/stronger-small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+
+   }
+
+  &__container {
+    // background-image: url(../../img/stronger.jpg);
+    // background-repeat: no-repeat;
+  }
+
+  &__title {
+    margin: 0;
+    padding-top: 136px;
+    padding-left: 101px;
+    width: 800px;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    color: var(--light-color);
+
+    @include sm-tablet{
+      font-size: 60px;
+      line-height: 56px;
+     }
+
+     @include small-tablet{
+      font-size: 40px;
+      text-align: left;
+      width: 600px;
+     }
+
+     @include mobile {
+      padding-bottom: 100px;
+     }
+
+     @include small-mobile{
+      padding-bottom: 100px;
+      font-size: 30px;
+      width: 300px;
+      line-height: 36px;
+
+     }
+
+     @include mini-mobile {
+      padding-bottom: 100px;
+     }
+
+     @include responsive{
+      display: none;
+     }
+    }
+
+    &__title2{
+      display: none;
+
+      @include responsive{
+        display: inline-block;
+        font-family: 'Agency FB';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        color: var(--light-color);
+        width: 243px;
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-bottom: 92px;
+       }
+    }
+
+  &__button{
+    margin-top: 80px;
+    margin-left: 323px;
+    margin-bottom: 205px;
+
+    @include mobile{
+      margin-left: 100px;
+     }
+
+     @include mobile{
+      display: none;
+     }
+  }
+
+
+}

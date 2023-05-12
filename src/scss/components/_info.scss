@@ -1,0 +1,179 @@
+.info {
+  background-color: var(--dark-color);
+
+
+  &__logo {
+    // margin-right: 35px;
+
+    @include responsive {
+      padding-top: 44px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    // padding-left: 113px;
+    // padding-right: 305px;
+    gap: 145px;
+    justify-content: center;
+    padding-top: 97px;
+    flex-wrap: wrap;
+    padding-bottom: 83px;
+
+    @include responsive {
+      padding: 0 30px;
+      // padding-top: 0;
+      // padding-bottom: 0;
+      // padding-left: 53px;
+      gap: 15px 145px;
+    }
+  }
+
+  &__label {
+    ::placeholder {
+      position: absolute;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: var(--text-color);
+      top: 19px;
+      left: 15px;
+
+    }
+  }
+
+  &__button {
+    width: 157px;
+    height: 58px;
+    background: var(--accent-color);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1.2px;
+    color: var(--text-color);
+  }
+
+  &__email {
+    margin-top: 33px;
+    width: 350px;
+    height: 66px;
+    background-color: #707070;
+    opacity: 0.2;
+
+    @include responsive{
+      width: 260px;
+    }
+
+  }
+
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  &__text {
+    width: 367px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 1.44px;
+    color: var(--light-color);
+
+    // @include super-small-mobile {
+    //   font-size: 18px;
+    //   line-height: 22px;
+    //   width: 290px;
+    // }
+
+    @include responsive {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 1.44px;
+      width: 300px;
+      padding-top: 10px;
+      // padding-right: 40px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    gap: 25px;
+
+    @include responsive {
+      // padding-left: 19px;
+      padding-bottom: 104px;
+      margin-left: 0;
+      align-items: center;
+    }
+
+    &--title {
+      margin: 0;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      color: var(--accent-color);
+
+      @include responsive {
+        padding-top: 35px;
+      }
+    }
+
+  }
+
+  &__information {
+    padding-right: 52px;
+
+    @include big-mobile {
+      padding-right: 0;
+    }
+
+    @include medium-mobile {
+      padding-right: 52px;
+      padding-left: 52px;
+    }
+
+    @include responsive {
+      padding: 0;
+    }
+
+    &--title {
+      margin: 0;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      color: var(--accent-color);
+
+      @include responsive {
+        padding-left: 0;
+
+      }
+
+    }
+
+    &--nav {
+      display: flex;
+      flex-direction: column;
+      padding-top: 63px;
+      gap: 23px;
+
+      @include responsive {
+        align-items: center;
+        padding-left: 0;
+
+      }
+    }
+
+    &--item {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: var(--light-color);
+    }
+  }
+}

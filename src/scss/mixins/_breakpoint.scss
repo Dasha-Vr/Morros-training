@@ -1,0 +1,107 @@
+/* stylelint-disable */
+
+
+@mixin big-desktop {
+  @media (max-width: (1440px)) {
+    @content;
+  }
+}
+
+
+
+@mixin big-tablet {
+  @media (max-width: (1361px)) {
+    @content;
+  }
+}
+
+@mixin med-tablet {
+  @media (max-width: (1302px)) {
+    @content;
+  }
+}
+
+// @mixin for-desktop {
+//   @media (min-width: (1025px)) {
+//     @content;
+//   }
+// }
+
+@mixin tablet {
+  @media (max-width: (1024px)) {
+    @content;
+  }
+}
+
+@mixin high-tablet {
+  @media (max-width: (974px)) {
+    @content;
+  }
+}
+
+@mixin tablet-medium {
+  @media (max-width: (897px)) {
+    @content;
+  }
+}
+
+@mixin sm-tablet {
+  @media (max-width: (814px)) {
+    @content;
+  }
+}
+
+
+@mixin small-tablet {
+  @media (max-width: (769px)) {
+    @content;
+  }
+}
+
+@mixin big-mobile {
+  @media (max-width: (738px)) {
+    @content;
+  }
+}
+
+@mixin medium-mobile {
+  @media (max-width: (685px)) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: (601px)) {
+    @content;
+  }
+}
+
+@mixin small-mobile {
+  @media (max-width: (550px)) {
+    @content;
+  }
+}
+
+@mixin mini-mobile {
+  @media (max-width: (507px)) {
+    @content;
+  }
+}
+
+@mixin mini-mini-mobile {
+  @media (max-width: (457px)) {
+    @content;
+  }
+}
+
+// @mixin super-small-mobile {
+//   @media (max-width: (382px)) {
+//     @content;
+//   }
+// }
+
+@mixin responsive {
+  @media (max-width: (382px)) {
+    @content;
+  }
+}
